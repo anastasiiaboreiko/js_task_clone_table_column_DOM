@@ -8,6 +8,6 @@ for (const row of table.rows) {
   if (cells.length >= 2) {
     const cloned = cells[1].cloneNode(true);
 
-    row.insertBefore(cloned, cells[4]);
+    row.insertBefore(cloned, cells[cells.length - 1]);
   }
 }
